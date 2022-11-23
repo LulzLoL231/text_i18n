@@ -1,4 +1,8 @@
 # -*- coding: utf-8 -*-
+#
+#  i18n module
+#  Created by LulzLoL231 at 23/11/22
+#
 import os
 import json
 import logging
@@ -20,11 +24,11 @@ class Language:
         self._lang_dict = lang_dict
 
     def t(self, word: str) -> str:
-      '''Возвращает текст по ключу.
+        '''Возвращает текст по ключу.
 
-        Args:
-            word (str): Ключ к тексту.
-      '''
+            Args:
+                word (str): Ключ к тексту.
+        '''
         if word in self._lang_dict.keys():
             return self._lang_dict[word]
         else:
